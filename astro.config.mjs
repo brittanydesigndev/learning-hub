@@ -29,6 +29,7 @@ export default defineConfig({
 				{ label: 'Home', link: '/' },
 				{ label: 'Renewals', items: [{ autogenerate: { directory: 'renewals' } }] },
 				{ label: 'Move-in & move-out', items: [{ autogenerate: { directory: 'move-in' } }] },
+				{ label: 'Screening', items: [{ autogenerate: { directory: 'screening' } }] },
 				{ label: 'For editors', items: [{ autogenerate: { directory: 'editors' } }] },
 			],
 			lastUpdated: true,
