@@ -3,11 +3,19 @@ title: How to edit the Learning Hub
 description: For content owners and SMEs — how to add, update and review articles in GitHub.
 ---
 
+## Not on GitHub? Suggest a change instead
+
+On any article, select **Article info → Suggest an edit**. A short form opens; Learning & Development reviews every suggestion and updates the article. That's all most SMEs and associates need.
+
+The rest of this page is for the people who maintain the Learning Hub in GitHub.
+
+## How publishing works
+
 Every article is a text file in GitHub. When a change is approved and merged, the site rebuilds and publishes itself in a few minutes.
 
 ## Updating an existing article
 
-1. On the article, select **Article info**, then **Suggest an edit**. GitHub opens the file in its editor.
+1. In GitHub, open the article's file under `src/content/docs/` and select the pencil icon to edit it.
 2. Make your change. Keep the [article template](#article-template) structure.
 3. Update `last_reviewed` and `next_review` at the top if this counts as a review.
 4. Select **Commit changes…**, write a short description of what changed (it shows in the article's change history), and choose **Create a new branch and start a pull request**.
@@ -87,4 +95,4 @@ import Walkthrough from '../../../components/Walkthrough.astro';
 
 ## Requesting new content
 
-Open an issue in the GitHub repository describing what's missing, or contact [L&D contact].
+Use the [Suggest an edit form](https://docs.google.com/forms/d/e/1FAIpQLSeXF2LKzZj5EXN4vax_RTbeB0DfO8s1C26aDcf1Z9gf5wQ7Sw/viewform) and choose **Request a new article**.
