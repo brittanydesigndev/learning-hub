@@ -1,0 +1,36 @@
+---
+title: Learning Hub
+description: Steps, policies and job aids from Learning & Development.
+template: splash
+tableOfContents: false
+lastUpdated: false
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import HomeSearch from '../../components/HomeSearch.astro';
+import RecentlyReviewed from '../../components/RecentlyReviewed.astro';
+
+<HomeSearch
+	popular={[
+		{ label: 'Processing a lease renewal', href: 'renewals/processing-a-lease-renewal/' },
+		{ label: 'Sending a renewal offer', href: 'renewals/sending-a-renewal-offer/' },
+		{ label: 'Move-in checklist', href: 'move-in/move-in-checklist/' },
+	]}
+/>
+
+## Browse by topic
+
+<CardGrid>
+	<LinkCard title="Renewals" href="renewals/sending-a-renewal-offer/" description="Renewal offers, signing, month-to-month and FAQs." />
+	<LinkCard title="Move-in & move-out" href="move-in/move-in-checklist/" description="Checklists, inspections, keys and deposits." />
+	<Card title="Screening">Coming soon: application review, decisions and conditional approvals.</Card>
+	<Card title="Resident requests">Coming soon: routing, handoffs between teams and response standards.</Card>
+</CardGrid>
+
+## Recently reviewed
+
+<RecentlyReviewed limit={5} />
+
+## Can’t find something?
+
+Use the search above, or [request a new article](editors/how-to-edit/#requesting-new-content). Spotted something outdated? Open the article, select **Article info**, then **Suggest an edit**.
