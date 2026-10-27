@@ -4,12 +4,12 @@ description: Answers to the questions residents ask most about renewing.
 sidebar:
   order: 4
 topic: Renewals
-audience: [Leasing Team, Resident Services Team]
+audience: [Leasing Agents, Resident Services]
 type: FAQ
 owner: "[Content owner]"
 owner_team: Learning & Development
 reviewed_by: "[Reviewer]"
-reviewer_role: Resident Services Team SME
+reviewer_role: Resident Services SME
 last_reviewed: 2026-01-10
 next_review: 2026-07-10
 ---

@@ -4,12 +4,12 @@ description: What to do when a resident's lease expires without a signed renewal
 sidebar:
   order: 3
 topic: Renewals
-audience: [Leasing Team]
+audience: [Leasing Agents]
 type: Policy
 owner: "[Content owner]"
 owner_team: Learning & Development
 reviewed_by: "[Reviewer]"
-reviewer_role: Leasing Team SME
+reviewer_role: Leasing SME
 last_reviewed: 2026-10-09
 next_review: 2027-04-09
 ---

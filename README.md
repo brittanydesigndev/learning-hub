@@ -70,4 +70,4 @@ npm run check-reviews
 
 GitHub Pages sites are public on free plans. Before adding real procedures, move hosting to one of:
 - **GitHub Enterprise Cloud** — Pages sites can be restricted to your organization's members.
-- **Azure Static Web Apps** with Microsoft (Entra ID) sign-in — only Cortland accounts can open it. The build is the same (`npm run build`, output in `dist/`); IT swaps the publish workflow.
+- **Azure Static Web Apps** with Microsoft (Entra ID) sign-in — only your company's accounts can open it. The build is the same (`npm run build`, output in `dist/`); IT swaps the publish workflow.

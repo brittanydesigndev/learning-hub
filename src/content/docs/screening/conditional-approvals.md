@@ -4,12 +4,12 @@ description: When an application can be approved with conditions, and what those
 sidebar:
   order: 3
 topic: Screening
-audience: [Screening Team, Leasing Team]
+audience: [Screening Specialists, Leasing Agents]
 type: Policy
 owner: "[Content owner]"
 owner_team: Learning & Development
 reviewed_by: "[Reviewer]"
-reviewer_role: Screening Team SME
+reviewer_role: Screening SME
 last_reviewed: 2026-10-27
 next_review: 2027-04-27
 ---
@@ -30,7 +30,7 @@ Explains when a conditional approval is allowed and which conditions can be appl
 
 ## Who to contact
 
-Questions about a specific application go to [Screening Team contact].
+Questions about a specific application go to [Screening contact].
 
 ## Related
 

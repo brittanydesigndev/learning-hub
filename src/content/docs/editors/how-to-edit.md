@@ -37,7 +37,7 @@ Copy this from `templates/article-template.mdx` in the repository:
 title: [Action-oriented title, e.g. "Processing a lease renewal"]
 description: [One sentence on when to use this]
 topic: [Renewals | Move-in & move-out | ...]
-audience: [Leasing Team]
+audience: [Leasing Agents]
 type: How-to
 owner: "[Name]"
 owner_team: Learning & Development
