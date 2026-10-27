@@ -6,9 +6,9 @@ tableOfContents: false
 lastUpdated: false
 ---
 
-import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 import HomeSearch from '../../components/HomeSearch.astro';
 import RecentlyReviewed from '../../components/RecentlyReviewed.astro';
+import TopicCards from '../../components/TopicCards.astro';
 
 <HomeSearch
 	popular={[
@@ -21,12 +21,14 @@ import RecentlyReviewed from '../../components/RecentlyReviewed.astro';
 
 ## Browse by topic
 
-<CardGrid>
-	<LinkCard title="Renewals" href="renewals/sending-a-renewal-offer/" description="Renewal offers, signing, month-to-month and FAQs." />
-	<LinkCard title="Move-in & move-out" href="move-in/move-in-checklist/" description="Checklists, inspections, keys and deposits." />
-	<LinkCard title="Screening" href="screening/reviewing-an-application/" description="Application review, decisions and conditional approvals." />
-	<Card title="Resident requests">Coming soon: routing, handoffs between teams and response standards.</Card>
-</CardGrid>
+<TopicCards
+	topics={[
+		{ title: 'Renewals', description: 'Renewal offers, signing, month-to-month and FAQs.', href: 'renewals/sending-a-renewal-offer/' },
+		{ title: 'Move-in & move-out', description: 'Checklists, inspections, keys and deposits.', href: 'move-in/move-in-checklist/' },
+		{ title: 'Screening', description: 'Application review, decisions and conditional approvals.', href: 'screening/reviewing-an-application/' },
+		{ title: 'Resident requests', description: 'Routing, handoffs between teams and response standards.' },
+	]}
+/>
 
 ## Recently reviewed
 
