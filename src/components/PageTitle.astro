@@ -8,7 +8,6 @@
  *     reviewer, review dates and the change history pulled from Git.
  */
 import { getHistory } from '../lib/history';
-import { feedbackLink } from '../site-settings';
 
 const { entry } = Astro.locals.starlightRoute;
 const data = entry.data;
@@ -26,8 +25,6 @@ const history = isArticle && entry.filePath ? getHistory(entry.filePath, 6) : []
 const repo = process.env.GITHUB_REPOSITORY;
 const branch = process.env.GITHUB_REF_NAME || 'main';
 const historyUrl = repo && entry.filePath ? `https://github.com/${repo}/commits/${branch}/${entry.filePath}` : null;
-// "Suggest an edit" opens the feedback form (see src/site-settings.ts).
-const editUrl = feedbackLink(data.title, Astro.url.href);
 
 const metaBits = [data.type, data.audience?.join(', ')].filter(Boolean).join(' Â· ');
 ---
@@ -128,14 +125,9 @@ const metaBits = [data.type, data.audience?.join(', ')].filter(Boolean).join(' Â
 					)}
 				</section>
 
-				{(historyUrl || editUrl) && (
+				{historyUrl && (
 					<div class="kb-panel-links">
-						{historyUrl && <a href={historyUrl}>View full history on GitHub</a>}
-						{editUrl && (
-							<a href={editUrl} target="_blank" rel="noopener">
-								Suggest an edit
-							</a>
-						)}
+						<a href={historyUrl}>View full history on GitHub</a>
 					</div>
 				)}
 			</div>

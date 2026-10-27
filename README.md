@@ -37,7 +37,7 @@ On a personal account this works on public repos for free; on private repos it n
 ## Editing content
 
 See the **For editors → How to edit the Learning Hub** page on the site, or `src/content/docs/editors/how-to-edit.md`.
-In short: open an article → **Article info** → **Suggest an edit** → change the text → open a pull request → reviewer approves → it's live.
+In short: edit the article file in GitHub → open a pull request → reviewer approves → it's live.
 
 New articles start from `templates/article-template.mdx`.
 
